@@ -10,7 +10,6 @@
 .main{
 	height:auto;
 	width: 100%;
-	border: 1px solid black;
 	margin-top: 10px;
 	
 	/*Flex*/
@@ -146,14 +145,9 @@ h2{ text-align: center; font-family: 'Ubuntu', sans-serif;}
 		}
 }
 
-
-<<<<<<< HEAD
-=======
 .promo1{ width: 100%; }
 
 .logo{
->>>>>>> 7c5ccd00c2101f7b7cd530ecc5943f8e6f6c24bf
-
 
 	width: 300px;
 }
@@ -166,15 +160,10 @@ h2{ text-align: center; font-family: 'Ubuntu', sans-serif;}
 
 }
 
-
-
 .redes{
 	float: right;
 	margin-top: 8%;
 	margin-right: 10%;
-
-
-
 
 
 }
