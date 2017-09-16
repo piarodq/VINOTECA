@@ -8,7 +8,7 @@
 .main{
 	height:auto;
 	width: 100%;
-	border: 1px solid black;
+	
 	/*Flex*/
 	display: flex;
 	flex-direction: row;
@@ -24,6 +24,7 @@
 		/*Flex*/
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 	}
 
 		.vino .izq{
@@ -42,20 +43,37 @@
 		.img{
 			height: 390px;
 			width: 45%;
-			border: 1px solid black;
+			
 			text-align: center;
 		}
 
 		.info{
 			width: 50%;
-			border: 1px solid black;
+			padding:2%;
+			
 			/*Flex*/
 			display: flex;
 			flex-direction: column;
 		}
 
-			.info .nombre{
+			.info .nombre, .precio{
+				height: 175px;
+				padding: 10px;
+				text-align: center;
+			}
 
+			.info .mas{
+				height: 30px;
+				width: 100%;
+				text-align: center;
+				background: #60006E;
+				color: #FFFFFF;
+				/*flex*/
+				align-items: center;
+			}
+
+			.info .mas:hover{
+				background: #A502BD;
 			}
 
 
