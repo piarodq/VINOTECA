@@ -61,7 +61,25 @@ header{
 		margin-right: 10px;
 	}
 
+/*Pagination */
+.pagination{
+	margin: 5px 0px 15px 0px;
+	color: #FFFFFF;
+	padding: 1%;
+	text-align: center;
+	height: 1%;
+	width: 100%;
+	background: #600b28;
+}
 
+.pagination a{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+.pagination:hover{
+	background: #A61647;
+}
 
 /*Promo video*/
 .promo1{ width: 100%; }
