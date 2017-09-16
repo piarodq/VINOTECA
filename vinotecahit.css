@@ -88,17 +88,25 @@
 }
 
 .rs{
-	width: 45px;
-	float: right;
+	width: 60px;
+
 	background-color: #600b28;
+	margin: 10px;
 
 }
 
-.f{
-	position: relative;
+
+
+.redes{
+	float: right;
+	margin-top: 8%;
+	margin-right: 10%;
+
+
+
+
+
 }
-
-
 header{
 	background-color: #600b28;
 }
