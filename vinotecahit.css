@@ -91,5 +91,15 @@
 .rs{
 	width: 45px;
 	float: right;
+	background-color: #600b28;
+
 }
 
+.f{
+	position: relative;
+}
+
+
+header{
+	background-color: #600b28;
+}
