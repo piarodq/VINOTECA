@@ -18,7 +18,7 @@
 }
 
 	.vino{
-		height: 400px;
+		height: auto;
 		width: 30%;
 		border: 1px solid #ccc;
 		margin: 5px;
@@ -35,10 +35,13 @@
 		} */
 		
 		.img{
-			height: 390px;
 			width: 45%;
 			text-align: center;
 		}
+
+			.img .responsive{
+				height: 390px;
+			}
 
 		.info{
 			width: 50%;
@@ -47,19 +50,23 @@
 			/*Flex*/
 			display: flex;
 			flex-direction: column;
-			align-content: space-between;
+			
 
 		}
 
-			.info .nombre, .precio{
+			.info .nombre, .location, .precio{
 				color: #6A6A6A;
 				text-align: center;
 				/*flex*/
-				flex: 1 1 20vh;
+				flex: 1 1 10vh;
+			}
+
+			.info .nombre h1{
+				font-size: 1.2em
 			}
 
 			.info .precio{
-
+				font-size: 1.5em;
 			}
 
 			.info .mas{
@@ -79,7 +86,35 @@
 
 			}
 
+@media all and (max-width: 800px){
+	.vino{
+		width: auto;
+		flex-direction: column;
+	}
+	.img{
+		width: 150px;
+	}
+} 
 
+@media all and (max-width: 500px){
+	.img .responsive{
+		height: 150px;
+	}
+	.vino{
+		flex: 1 1 auto;
+	}
+	.main{
+		flex-direction: row;
+	}
+	.info{
+		width: auto;
+		padding:0px;
+		display: block;
+	}
+		.info .mas{
+			margin-bottom: 3px;
+		}
+}
 
 
 .promo1{ width: 100%; }
