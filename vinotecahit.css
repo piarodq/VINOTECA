@@ -11,6 +11,8 @@
 	height:auto;
 	width: 100%;
 	border: 1px solid black;
+	margin-top: 10px;
+	
 	/*Flex*/
 	display: flex;
 	flex-direction: row;
@@ -46,48 +48,136 @@ h2{ text-align: center; font-family: 'Ubuntu', sans-serif;}
 .logo{ width: 300px;}
 
 	.vino{
-		height: 400px;
+		height: auto;
 		width: 30%;
-		border: 1px solid black;
+		border: 1px solid #ccc;
 		margin: 5px;
 		/*Flex*/
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 	}
 
-		.vino .izq{
-		
-		}
-		.vino .der{
+		/*.vino:nth-last-child(1) {
 
-		}
-
-		.vino:nth-last-child(1) {
-
-	   		/*Flex*/ 
+	   		Flex 
 	    	align-items: flex-start;
-		} 
+		} */
 		
 		.img{
-			height: 390px;
 			width: 45%;
-			border: 1px solid black;
 			text-align: center;
 		}
 
+			.img .responsive{
+				height: 390px;
+			}
+
 		.info{
 			width: 50%;
-			border: 1px solid black;
+			padding:2%;
+			background: rgba(197,53,218,0.2);
 			/*Flex*/
 			display: flex;
 			flex-direction: column;
+			
+
 		}
 
-			.info .nombre{
+			.info .nombre, .location, .precio{
+				color: #6A6A6A;
+				text-align: center;
+				/*flex*/
+				flex: 1 1 10vh;
+			}
+
+			.info .nombre h1{
+				font-size: 1.2em
+			}
+
+			.info .precio{
+				font-size: 1.5em;
+			}
+
+			.info .mas{
+				height: 30px;
+				width: 100%;
+				text-align: center;
+				background: #60006E;
+				color: #FFFFFF;
+				/*flex*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.info .mas:hover{
+				background: #A502BD;
 
 			}
 
+@media all and (max-width: 800px){
+	.vino{
+		width: auto;
+		flex-direction: column;
+	}
+	.img{
+		width: 150px;
+	}
+} 
+
+@media all and (max-width: 500px){
+	.img .responsive{
+		height: 150px;
+	}
+	.vino{
+		flex: 1 1 auto;
+	}
+	.main{
+		flex-direction: row;
+	}
+	.info{
+		width: auto;
+		padding:0px;
+		display: block;
+	}
+		.info .mas{
+			margin-bottom: 3px;
+		}
+}
+
+
+<<<<<<< HEAD
+=======
+.promo1{ width: 100%; }
+
+.logo{
+>>>>>>> 7c5ccd00c2101f7b7cd530ecc5943f8e6f6c24bf
+
+
+	width: 300px;
+}
+
+.rs{
+	width: 60px;
+
+	background-color: #600b28;
+	margin: 10px;
+
+}
+
+
+
+.redes{
+	float: right;
+	margin-top: 8%;
+	margin-right: 10%;
 
 
 
 
+
+}
+header{
+	background-color: #600b28;
+}
