@@ -206,8 +206,6 @@ header{
 	}
 } 
 
-<<<<<<< HEAD
-
 
 .promo1{ width: 100%; }
 
@@ -223,7 +221,7 @@ header{
 	background-color: #600b28;
 	margin: 10px;
 
-=======
+
 @media all and (max-width: 500px){
 	.header{
 		/*Flex*/
@@ -246,7 +244,7 @@ header{
 		.info .mas{
 			margin-bottom: 3px;
 		}
->>>>>>> 5c7af5a2f6fc82f928f96bbb53132e10ab797612
+
 }
 
 
@@ -255,7 +253,6 @@ header{
 .footer p{ font-size: 11px; color: white; text-align: center; padding-top: 20px; font-family: 'Ubuntu', sans-serif;}
 
 
-<<<<<<< HEAD
 }
 header{
 	background-color: #600b28;
@@ -267,5 +264,3 @@ header{
 	font-size: 30px;
 
 }
-=======
->>>>>>> 5c7af5a2f6fc82f928f96bbb53132e10ab797612
