@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 *{
 	margin:0;
 	padding:0;
@@ -15,10 +17,118 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+h2{ text-align: center; font-family: 'Ubuntu', sans-serif;}
+
+
+/*Menu*/
+
+header{
+	height:auto;
+	width:100%;
+	background-color: #600b28;
+	/*Flex*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
+.logo{
+	width: 300px;
+}
+
+
+.redes{
+	padding: 1%;
+	/*flex*/
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+	.redes a{
+		width: auto;
+		font-size: 2.2em;
+		color: #FFFFFF;
+		padding: 1%;
+	}
+
+	.redes a:hover{
+		color: #8D8D8D;
+	}
+
+	.redes i{
+		margin-right: 10px;
+	}
+
+/*Pagination */
+.pagination{
+	margin: 5px 0px 15px 0px;
+	color: #FFFFFF;
+	padding: 1%;
+	text-align: center;
+	height: 1%;
+	width: 100%;
+	background: #600b28;
+}
+
+.pagination a{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+.pagination:hover{
+	background: #A61647;
+}
+
+/*Promo video*/
+.promo1{ width: 100%; }
+
+
+/*Promo círculos*/
+.promo2{ width: 100%; height: auto; 
+		padding: 50px; background-color: #e0381e;
+		display: flex; align-items: center;
+		flex-direction: column;}
+
+.promo2 h1 { color: black; padding-top: 10px; font-family: 'Ubuntu', sans-serif; font-size: 25px; color: black; }
+
+.promo2 p { text-align: center; color: white; font-family: 'Ubuntu', sans-serif; font-size: 14px; margin:10px;}
+
+.item {display: flex; border-radius: 50%;
+		background-color: #c9b38a;
+		width: 250px; height: 250px;
+		justify-content: center;
+		padding-top: 30px;
+		opacity: 0.6;
+		background-size: cover;}
+
+.cabernet { background-image: url(http://www.theveenocompany.com/wp-content/uploads/2013/09/IMG_2386.jpg); }
+
+.malbec { background-image: url(https://i.pinimg.com/736x/6b/eb/0c/6beb0c9ecdc020e72f6814830d451c9a--wine-collection-wine-o.jpg); }
+
+.syra{ background-image: url(http://media.advance.net/newyorkupstatecom_national_desk_blog/photo/2017/06/08/longpoint.JPG); }
+
+.syra {}
+
+.item p {color: white; text-align: center; opacity: 1; font-family: 'Ubuntu', sans-serif;}
+
+.item h2{ color: white; font-family: 'Ubuntu', sans-serif; font-size: 25px; color: #949f36;}
+
+
+/*formulario*/
+.botones { width:100%; height:150px; background-color:#c8b789; display: flex; flex-direction: row; justify-content: center; align-items: center;}
+
+.botones input{ display: flex; width: 250px; height: 30px; margin: 15px; }
+
+.botones h1{ text-align: left; margin-left: 22px; font-family: 'Ubuntu', sans-serif; font-size: 15px; }
+
+
+
+.logo{ width: 300px;}
+
 	.vino{
-		height: 400px;
+		height: auto;
 		width: 30%;
 		border: 1px solid #ccc;
 		margin: 5px;
@@ -35,10 +145,13 @@
 		} */
 		
 		.img{
-			height: 390px;
 			width: 45%;
 			text-align: center;
 		}
+
+			.img .responsive{
+				height: 390px;
+			}
 
 		.info{
 			width: 50%;
@@ -47,19 +160,23 @@
 			/*Flex*/
 			display: flex;
 			flex-direction: column;
-			align-content: space-between;
+			
 
 		}
 
-			.info .nombre, .precio{
+			.info .nombre, .location, .precio{
 				color: #6A6A6A;
 				text-align: center;
 				/*flex*/
-				flex: 1 1 20vh;
+				flex: 1 1 10vh;
+			}
+
+			.info .nombre h1{
+				font-size: 1.2em
 			}
 
 			.info .precio{
-
+				font-size: 1.5em;
 			}
 
 			.info .mas{
@@ -79,7 +196,17 @@
 
 			}
 
+@media all and (max-width: 800px){
+	.vino{
+		width: auto;
+		flex-direction: column;
+	}
+	.img{
+		width: 150px;
+	}
+} 
 
+<<<<<<< HEAD
 
 
 .promo1{ width: 100%; }
@@ -96,17 +223,39 @@
 	background-color: #600b28;
 	margin: 10px;
 
+=======
+@media all and (max-width: 500px){
+	.header{
+		/*Flex*/
+		flex-direction: column;
+	}
+	.img .responsive{
+		height: 150px;
+	}
+	.vino{
+		flex: 1 1 auto;
+	}
+	.main{
+		flex-direction: row;
+	}
+	.info{
+		width: auto;
+		padding:0px;
+		display: block;
+	}
+		.info .mas{
+			margin-bottom: 3px;
+		}
+>>>>>>> 5c7af5a2f6fc82f928f96bbb53132e10ab797612
 }
 
 
+.footer{ width:100%; height:60px; background-color: #600b28; }
 
-.redes{
-	float: right;
-	margin-top: 8%;
-	margin-right: 10%;
+.footer p{ font-size: 11px; color: white; text-align: center; padding-top: 20px; font-family: 'Ubuntu', sans-serif;}
 
 
-
+<<<<<<< HEAD
 }
 header{
 	background-color: #600b28;
@@ -118,3 +267,5 @@ header{
 	font-size: 30px;
 
 }
+=======
+>>>>>>> 5c7af5a2f6fc82f928f96bbb53132e10ab797612
